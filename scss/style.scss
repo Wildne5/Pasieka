@@ -42,7 +42,8 @@ body {
 
     &-dark {
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(12, 12, 12, 0.7);
+        background-image: linear-gradient(310deg, rgba(12, 12, 12, 0.7) 100%, rgba(12, 12, 12, 0.7) 100%);
         height: 70vh;
         width: 100%;
         z-index: 2;
@@ -55,6 +56,7 @@ body {
     &__title {
         text-transform: uppercase;
         font-size: 4rem;
+
     }
 
     &__text {
@@ -62,6 +64,7 @@ body {
         font-size: 2rem;
         margin-top: 0.5em;
         padding: 0 0.5em;
+
     }
 
     &__btn {
@@ -88,7 +91,8 @@ body {
 
 // --------------------------------- SEKCJE ----------------------
 .section {
-    background-color: $secondary-color;
+    background-color: rgba(12, 12, 12, 1);
+    background-image: linear-gradient(310deg, rgba(12, 12, 12, 1) 100%, rgba(12, 12, 12, 1) 100%);
 
     h1 {
         font-size: 4em;
@@ -154,7 +158,97 @@ body {
         }
     }
 
+    &-two {
+        background-color: #fdd333;
+        color: black;
+        padding: 0;
+        margin-top: -2em;
 
+        &--smallText {
+            padding-top: 2em;
+            text-align: center;
+            font-size: 2em;
+            color: gray;
+        }
+
+        h2 {
+            font-size: 4em;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 auto;
+            margin-top: 1.4em;
+            width: 20%;
+            border: black 1px solid;
+
+        }
+
+        &-box {
+
+
+            &__small {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                overflow: hidden;
+
+                &--img {
+                    background-size: cover;
+                    background-position: center;
+                    z-index: 1;
+                    width: 100%;
+                    overflow: hidden;
+                    text-align: center;
+                    padding: 2em;
+                    margin: 0 auto;
+                }
+
+                &--text {
+                    text-align: center;
+                    font-size: 2em;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    &-third {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            padding-top: 2em;
+        }
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--text {
+                padding-bottom: 1.5em;
+            }
+        }
+
+        &--circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(84, 84, 84, 1);
+            background-image: linear-gradient(118deg, rgba(84, 84, 84, 1) 20%, rgba(34, 34, 34, 1) 80%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
 }
 
 
